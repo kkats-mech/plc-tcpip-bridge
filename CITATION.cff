@@ -1,0 +1,17 @@
+cff-version: 0.1.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Katsampiris Salgado"
+    given-names: "Konstantinos"
+    email: "katsampiris.konst@gmail.com"
+    orcid: "https://orcid.org/0000-0002-9577-365X"
+title: "PLC TCP/IP Bridge"
+version: 0.1.0
+date-released: 2025-10-23
+url: "https://github.com/kkats-mech/plc-tcpip-bridge"
+repository-code: "https://github.com/kkats-mech/plc-tcpip-bridge"
+license: MIT
+keywords:
+  - PLC
+  - industrial automation
+  - TCP/IP
