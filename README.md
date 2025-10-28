@@ -12,7 +12,7 @@ A Python library for communicating with PLCs (Programmable Logic Controllers) ov
 
 ## Installation
 
-### From PyPI (coming soon)
+### From PyPI
 ```bash
 pip install plc-tcpip-bridge
 ```
