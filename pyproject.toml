@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plc-tcpip-bridge"         # the PyPI name (hyphens are fine)
+version = "0.1.0"                  # bump on every release
+description = "PLC TCP/IP bridge with client/server, IEC types, and utilities"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Konstantinos Katsampiris Salgado" }]
+keywords = ["PLC", "automation", "TCP", "industrial"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+# If you have runtime deps, move them from requirements.txt into here:
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/kkats-mech/plc-tcpip-bridge"
+Issues = "https://github.com/kkats-mech/plc-tcpip-bridge/issues"
+
+[tool.setuptools]
+packages = ["plc_tcpip_bridge"]    # or use find:
+# [tool.setuptools.packages.find]
+# where = ["."]
+# include = ["plc_tcpip_bridge*"]
