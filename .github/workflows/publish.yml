@@ -1,0 +1,25 @@
+name: Publish to PyPI
+
+on:
+  release:
+    types: [published]
+  push:
+    tags: ["v*"]         # also run when you push a v-tag
+  workflow_dispatch:      # lets you run it manually from the Actions tab
+
+permissions:
+  contents: read
+  id-token: write         # REQUIRED for Trusted Publisher (OIDC)
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install --upgrade build
+      - run: python -m build
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
